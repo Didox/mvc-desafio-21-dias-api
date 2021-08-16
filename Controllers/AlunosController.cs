@@ -18,6 +18,7 @@ namespace mvc.Controllers
             _logger = logger;
         }
 
+        [Route("/alunos")]
         public IActionResult Index()
         {
             return View(Aluno.Todos());
